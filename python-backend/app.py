@@ -12,19 +12,17 @@ app = Flask(__name__)
 
 # Enable CORS for all routes (allows frontend to call this API)
 # Allow localhost for development and Render URLs for production
-CORS(app, resources={
-    r"/api/*": {
-        "origins": [
-            "http://localhost:3000", 
-            "http://127.0.0.1:3000", 
-            "http://localhost:5001", 
-            "http://127.0.0.1:5001",
-            "https://*.onrender.com"  # Allow all Render subdomains
-        ],
-        "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type"]
-    }
-})
+CORS(app, 
+     origins=[
+         "http://localhost:3000", 
+         "http://127.0.0.1:3000", 
+         "http://localhost:5001", 
+         "http://127.0.0.1:5001",
+         "https://medora-var9.onrender.com"  # Your frontend URL
+     ],
+     methods=["GET", "POST", "OPTIONS"],
+     allow_headers=["Content-Type"],
+     supports_credentials=True)
 
 # Initialize the ML predictor
 try:
