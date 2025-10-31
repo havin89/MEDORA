@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title data-i18n="patientPageTitle">Patient Dashboard | MEDORA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="dashboard-page">
+  <!-- Navbar (keep consistent with the rest of your site) -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-logo" data-i18n="siteName">MEDORA</a>
+    </div>
+    <div class="navbar-right">
+      <button id="patientNavCircle" class="profile-circle" type="button" title="Account" aria-label="Account"><img src="assets/user.png" alt="Profile"></button>
+    </div>
+  </nav>
+
+  <div class="swipe-button" role="tablist" aria-label="Sections">
+    <ul>
+      <li><button role="tab" class="active" data-target="#reports" data-i18n="reportsTab">Reports</button></li>
+      <li><button role="tab" data-target="#notifications"><span data-i18n="notifications">Notifications</span> <span class="tab-badge" id="patNotifCount"></span></button></li>
+      <li><button role="tab" data-target="#alerts" data-i18n="alertsTitle">Urgent Alerts</button></li>
+      <li><button role="tab" data-target="#appointments" data-i18n="appointments">Appointments</button></li>
+      <li><button role="tab" data-target="#recs" data-i18n="recommendations">AI Recommendations</button></li>
+    </ul>
+  </div>
+
+  <main class="dashboard">
+    <header class="dashboard-header">
+      <h1 id="patientNameHeader" data-i18n="patientDashboardTitle">Your Personal Health Overview</h1>
+      <p data-i18n="patientDashboardSubtitle">AI-powered insights, risk analysis, and personalized care — all in one place.</p>
+    </header>
+
+    <div class="dashboard-panes pane-focused">
+      <div id="notifications" class="dashboard-pane">
+        <section class="notifications-section">
+          <h2 data-i18n="notifications">Notifications</h2>
+          <div id="patientNotificationsCenter" class="notif-grid"></div>
+
+          <div id="patientNotificationsCenter" class="notif-grid"></div>
+        </section>
+      </div>
+      <div id="reports" class="dashboard-pane is-active">
+        <section class="ai-health-report">
+          <h2 data-i18n="aiReportTitle">AI Health Report</h2>
+          <div id="reportContent" class="ai-report-box" style="text-align: center; padding: 60px 20px;">
+            <div style="margin-bottom: 30px;">
+              <svg width="120" height="120" viewBox="0 0 120 120" style="margin: 0 auto 20px;">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="#e0e0e0" stroke-width="8"/>
+                <path d="M60 20 L60 60 L85 85" fill="none" stroke="#4A90E2" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="60" cy="60" r="8" fill="#4A90E2"/>
+              </svg>
+              <h3 style="color: #2c3e50; margin-bottom: 10px;" data-i18n="aiReportReadyTitle">Your Health Report is Ready</h3>
+              <p style="color: #7f8c8d; font-size: 16px; max-width: 500px; margin: 0 auto 30px;">
+                <span data-i18n="aiReportReadyDesc">Click the button below to generate your personalized AI health report based on your latest blood analysis.</span>
+              </p>
+            </div>
+            <div class="ai-buttons">
+              <button 
+                class="btn-primary" 
+                id="generatePatientReport" 
+                style="font-size: 18px; padding: 15px 40px; cursor: pointer;"
+                onclick="console.log('🖱️ Generate Report button clicked'); if(window.currentPatient && typeof handlePatientGenerateReport === 'function') { handlePatientGenerateReport(window.currentPatient); } else { console.error('❌ Patient data not ready yet'); }">
+                 <span data-i18n="generateMyReport">Generate My Health Report</span>
+              </button>
+            </div>
+            <p style="color: #999; font-size: 14px; margin-top: 20px;">
+              <em data-i18n="aiReportIntroNote">This report uses advanced machine learning to analyze your blood test results</em>
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div id="alerts" class="dashboard-pane">
+        <section class="alerts-section">
+          <h2 data-i18n="alertsTitle">Urgent Alerts</h2>
+          <div id="patientAlertsList" class="alerts-scroll"></div>
+          <div class="patient-alerts-detail" style="margin-top:12px;">
+            <h3 data-i18n="alertsDetailTitle">Alerts Detail</h3>
+            <table class="detail-table" style="width:100%; border-collapse:collapse;">
+              <thead>
+                <tr>
+                  <th style="text-align:left; padding:6px 8px; border-bottom:1px solid #eee;" data-i18n="tblCategory">Category</th>
+                  <th style="text-align:left; padding:6px 8px; border-bottom:1px solid #eee;" data-i18n="tblFinding">Finding</th>
+                  <th style="text-align:left; padding:6px 8px; border-bottom:1px solid #eee;" data-i18n="tblDetails">Details</th>
+                </tr>
+              </thead>
+              <tbody id="patientAlertsDetails"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <div id="profile" class="dashboard-pane">
+        <section class="profile-section">
+          <h2 data-i18n="profileTitle">My Medical Profile</h2>
+          <div class="profile-card">
+
+            <div class="main-profile">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect fill='%234A90E2' width='150' height='150'/%3E%3Cpath fill='%23ffffff' d='M75 45c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20zm0 55c-16.5 0-30 6.7-30 15v10h60v-10c0-8.3-13.5-15-30-15z'/%3E%3C/svg%3E" alt="Profile Picture">
+            
+            </div>
+              <button class="btn-edit">Edit Profile</button>
+
+          </div>
+        </section>
+      </div>
+
+      <div id="appointments" class="dashboard-pane">
+        <section class="appointments-section">
+          <h2 data-i18n="appointmentsTitle">Upcoming Appointments</h2>
+          <div class="appointment-container">
+            <ul class="appointment-list">
+              <!-- Will be filled dynamically based on logged-in patient data -->
+            </ul>
+          </div>
+          <div class="ai-tip">
+            <p data-i18n="aiTip">Before your appointment, review your latest AI report and update your symptom log. Arrive 10 minutes early.</p>
+          </div>
+          <button class="book-a" data-i18n="bookAppointment">Book Appointment</button>
+        </section>
+      </div>
+
+      <div id="recs" class="dashboard-pane">
+        <section class="education-section">
+          <h2>Personalized Recommendations</h2>
+          <ul id="patientRecsList" class="recs-list"></ul>
+        </section>
+      </div>
+    </div>
+
+    <footer class="patient-footer">
+      <a href="index.html" class="back-link2" data-i18n="backToMain">← Back to Main Page</a>
+    </footer>
+  </main>
+
+  <script src="lang.js"></script>
+  <script src="script.js"></script>
+  <script src="dashboard.js"></script>
+  <script src="ml-integration.js"></script>
+  <script>
+    // Guard: require logged-in patient
+    (function(){
+      try {
+        const raw = localStorage.getItem('loggedInPatient');
+        if (!raw) {
+          window.location.href = 'patient-login.html';
+        }
+      } catch (_) {
+        window.location.href = 'patient-login.html';
+      }
+    })();
+  </script>
+</body>
+</html>

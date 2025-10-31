@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: medora-ml-api
+    env: python
+    region: frankfurt  # or your preferred region
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.6
+      - key: PORT
+        value: 10000

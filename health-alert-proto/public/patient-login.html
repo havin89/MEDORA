@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Patient Login | MEDORA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<!-- Navbar kısmına ekleyin -->
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="index.html" class="navbar-logo" data-i18n="siteName">MEDORA</a>
+  </div>
+</nav>
+
+<body>
+  <main class="login-main">
+    <h2 data-i18n="patientLogin">Patient Login</h2>
+    <form id="patientForm" novalidate>
+      <label data-i18n-placeholder="patientIdTitle">
+        <span data-i18n="patientIdLabel">Patient ID</span>
+        <input id="patientId" name="patientId" type="text" placeholder="e.g. P001" data-i18n-placeholder="patientIdPlaceholder" />
+        <small class="error" id="err-patientId"></small>
+      </label>
+
+      <label data-i18n-placeholder="phoneTitle">
+        <span data-i18n="phoneLabel">Phone</span>
+        <input id="patientPhone" name="patientPhone" type="tel" placeholder="+905XXXXXXXXX" data-i18n-placeholder="phonePlaceholder" />
+        <small class="error" id="err-patientPhone"></small>
+      </label>
+
+      <label data-i18n-placeholder="birthYearTitle">
+        <span data-i18n="birthYearLabel">Birth Year</span>
+        <input id="birthYear" name="birthYear" type="number" placeholder="e.g. 1990" data-i18n-placeholder="birthYearPlaceholder" />
+        <small class="error" id="err-birthYear"></small>
+      </label>
+
+      <label data-i18n-placeholder="emailTitle">
+        <span data-i18n="patientEmailLabel">Email</span>
+        <input id="patientEmail" name="patientEmail" type="email" placeholder="you@example.com" data-i18n-placeholder="emailPlaceholder" />
+        <small class="error" id="err-patientEmail"></small>
+      </label>
+
+      <label data-i18n-placeholder="passwordTitle">
+        <span data-i18n="patientPasswordLabel">Password</span>
+        <input id="patientPassword" name="patientPassword" type="password" placeholder="Your password" data-i18n-placeholder="password" />
+        <small class="error" id="err-patientPassword"></small>
+      </label>
+
+      <label class="consent">
+        <input id="patientConsent" name="patientConsent" type="checkbox" data-i18n-placeholder="consentPlaceholder" />
+        <span data-i18n="consentLabel">I consent to data usage.</span>
+        <small class="error" id="err-patientConsent"></small>
+      </label>
+
+      <button id="patientSubmit" type="submit" data-i18n="login">Login</button>
+      <p id="patientFormMessage" class="form-message"></p>
+    </form>
+    <a href="index.html" class="back-link" data-i18n="backToMain">Back to Main Page</a>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+<script src="lang.js"></script>
+
+</html>

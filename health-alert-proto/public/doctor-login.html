@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Doctor Login | MEDORA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<!-- Navbar kısmına ekleyin -->
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="index.html" class="navbar-logo" data-i18n="siteName">MEDORA</a>
+  </div>
+  <div class="navbar-right">
+    <a href="index.html" class="navbar-link">Home</a>
+  </div>
+</nav>
+
+<body>
+  <main class="login-main">
+    <h2 data-i18n="doctorLogin">Doctor Login</h2>
+    <form id="doctorForm" novalidate>
+
+      <label>
+        <span data-i18n="institutionIdLabel">Institutional ID</span>
+        <input id="docInstitutionId" type="text" required placeholder="e.g. HOSP1234" data-i18n-placeholder="institutionIdNum">
+        <small class="error" id="err-docInstitutionId"></small>
+      </label>
+
+      <label>
+        <span data-i18n="doctorEmailLabel">Institutional Email</span>
+        <input id="docEmail" type="email" placeholder="name@hospital.org" data-i18n-placeholder="emailPlaceholder">
+        <small class="error" id="err-docEmail"></small>
+      </label>
+
+      <label>
+        <span data-i18n="doctorPasswordLabel">Password</span>
+        <input id="docPassword" type="password" placeholder="Strong password" data-i18n-placeholder="password">
+        <small class="error" id="err-docPassword"></small>
+      </label>
+
+      <label class="consent">
+        <input id="docConsent" type="checkbox" data-i18n-placeholder="consentPlaceholder">
+        <span data-i18n="consentLabel">I consent to data usage.</span>
+        <small class="error" id="err-docConsent"></small>
+      </label>
+
+      <button id="docSubmit" type="submit" data-i18n="login">Login</button>
+      <p id="formMessage" class="form-message"></p>
+    </form>
+    <a href="index.html" class="back-link" data-i18n="backToMain">Back to Main Page</a>
+  </main>
+
+  <script src="lang.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

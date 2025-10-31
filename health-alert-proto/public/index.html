@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>MEDORA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="navbar-logo" data-i18n="siteName">MEDORA</a>
+    </div>
+  </nav>
+
+  <main class="main-landing">
+    <section class="hero-content">
+      <h1 data-i18n="welcome">Welcome to MEDORA</h1>
+      <p class="subtitle" data-i18n="chooseLogin">Please select your login type:</p>
+      <div class="button-group">
+        <a href="patient-login.html" class="login-btn patient-btn">
+          <img class="btn-img" src="assets/patient.png" alt="Doctor" />
+          <span data-i18n="patientLogin">Patient Login</span>
+        </a>
+        <a href="doctor-login.html" class="login-btn doctor-btn">
+          <img class="btn-img" src="assets/doctor.png" alt="Doctor" />
+          <span data-i18n="doctorLogin">Doctor Login</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <section class="watch-demo">
+    <h2 data-i18n="watchDemo">Watch Demo</h2>
+    <p class="demo-subtitle" data-i18n="demoSubtitle">See how MEDORA streamlines doctor and patient workflows.</p>
+
+    <div class="video-wrapper">
+      <iframe class="demo-video" src="https://www.youtube.com/embed/XpHyxQJASeY" title="MEDORA Demo"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+   
+    <style>
+.demo-accordion {
+  background: #f9fafc;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  max-width: 750px;
+  margin: 2rem auto;
+  font-family: 'Inter', sans-serif;
+  color: #2d3748;
+}
+
+.demo-accordion h3 {
+  font-size: 1.6rem;
+  color: #1a202c;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.demo-accordion details {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  padding: 1rem 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.demo-accordion details:hover {
+  border-color: #63b3ed;
+  box-shadow: 0 4px 10px rgba(99,179,237,0.1);
+}
+
+.demo-accordion summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #2b6cb0;
+}
+
+.summary-badge {
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.badge-alt {
+  background-color: #edf2f7;
+  color: #4a5568;
+}
+
+.demo-accordion ul {
+  margin-top: 0.8rem;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.demo-accordion li {
+  list-style-type: "• ";
+  margin-bottom: 0.3rem;
+}
+</style>
+
+<div class="demo-accordion">
+  <h3 class="accordion-header" data-i18n="accordionExplore"> Explore the Medora Demo</h3>
+
+  <details open>
+    <summary>
+      <span class="summary-title" data-i18n="learnTitle">What you'll learn</span>
+      <span class="summary-badge" data-i18n="learnTopicsBadge">3 topics</span>
+    </summary>
+    <ul>
+      <li data-i18n="learnBullet1">Seamless login experience for both doctors and patients, showcasing how data security and accessibility blend together.</li>
+      <li data-i18n="learnBullet2">Doctor dashboard that demonstrates how AI-generated reports can enhance diagnosis and patient insights.</li>
+      <li data-i18n="learnBullet3">Patient panel featuring appointments, personalized health tracking, and intelligent wellness tips.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>
+      <span class="summary-title" data-i18n="featuresTitle">Key features</span>
+      <span class="summary-badge badge-alt" data-i18n="featuresBadge">Highlights</span>
+    </summary>
+    <ul>
+      <li data-i18n="featuresBullet1">AI-driven recommendations that adapt based on health patterns and recent trends.</li>
+      <li data-i18n="featuresBullet2">Medication safety checks to prevent harmful drug interactions.</li>
+      <li data-i18n="featuresBullet3">Clean, responsive design ensuring accessibility on all devices and for all users.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>
+      <span class="summary-title" data-i18n="faqTitle">FAQ</span>
+      <span class="summary-badge" data-i18n="faqBadge">Quick answers</span>
+    </summary>
+    <ul>
+      <li data-i18n="faqBullet1">Supported platforms: Works seamlessly on both desktop and mobile browsers.</li>
+      <li data-i18n="faqBullet3">Demo mode: Uses only sample data; no real medical information is processed.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>
+      <span class="summary-title" data-i18n="securityTitle">Security & Privacy</span>
+      <span class="summary-badge" data-i18n="securityBadge">Info</span>
+    </summary>
+    <ul>
+      <li data-i18n="securityBullet1">Strict data isolation: All demo interactions are simulated and stored locally only.</li>
+      <li data-i18n="securityBullet2">Privacy-first design: Built with security principles aligned with healthcare standards.</li>
+      <li data-i18n="securityBullet3">Future goals: Full encryption and GDPR-compliant storage planned for production.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>
+      <span class="summary-title" data-i18n="roadmapTitle">Roadmap</span>
+      <span class="summary-badge badge-alt" data-i18n="roadmapBadge">Next steps</span>
+    </summary>
+    <ul>
+      <li data-i18n="roadmapBullet1">Deeper AI insights: Expand predictive analytics for early risk detection.</li>
+      <li data-i18n="roadmapBullet2">Real-time communication: Secure chat between patients and doctors.</li>
+    </ul>
+  </details>
+</div>
+
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand" data-i18n="siteName">MEDORA</div>
+      <div class="footer-links">
+        <a href="doctor-login.html" data-i18n="footerDoctorLogin">Doctor Login</a>
+        <a href="patient-login.html" data-i18n="footerPatientLogin">Patient Login</a>
+      </div>
+      <div class="footer-copy">© <span id="yearCopy"></span> MEDORA. <span data-i18n="footerRights">All rights reserved.</span></div>
+    </div>
+    <script>
+      (function(){
+        try{ document.getElementById('yearCopy').textContent = new Date().getFullYear(); }catch(e){}
+      })();
+    </script>
+  </footer>
+
+
+  <script src="lang.js"></script>
+</body>
+</html>

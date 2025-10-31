@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title data-i18n="doctorDashboardTitle">Doctor Dashboard | MEDORA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body class="dashboard-page doctor-page">
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="index.html" class="navbar-logo" data-i18n="siteName">MEDORA</a>
+  </div>
+  <div class="navbar-right">
+    <button id="doctorNavCircle" class="profile-circle" type="button" title="Account" aria-label="Account"><img src="assets/user.png" alt="Profile"></button>
+  </div>
+</nav>
+
+
+
+  <div class="swipe-button" role="tablist" aria-label="Sections">
+    <ul>
+      <li><button role="tab" class="active" data-target="#doc-search"><span class="tab-title" data-i18n="tabSearch">Search</span> <span class="tab-badge" id="tabSearchCount"></span></button></li>
+      <li><button role="tab" data-target="#doc-notifications"><span class="tab-title" data-i18n="notifications">Notifications</span> <span class="tab-badge" id="tabNotifCount"></span></button></li>
+      <li><button role="tab" data-target="#doc-alerts"><span class="tab-title" data-i18n="alertsTitle">Alerts</span> <span class="tab-badge" id="tabAlertsCount"></span></button></li>
+      <li><button role="tab" data-target="#doc-upcoming"><span class="tab-title" data-i18n="tabUpcoming">Upcoming</span> <span class="tab-badge" id="tabUpcomingCount"></span></button></li>
+    </ul>
+  </div>
+
+  <main class="dashboard">
+    <div class="dashboard-panes pane-focused">
+      <div id="doc-notifications" class="dashboard-pane">
+        <section class="notifications-section">
+          <h2 data-i18n="notifications">Notifications</h2>
+          <div id="doctorNotificationsCenter" class="notif-grid"></div>
+        </section>
+      </div>
+      <div id="doc-account" class="dashboard-pane">
+        <section class="profile-section">
+          <h2 data-i18n="myAccount">My Account</h2>
+          <div id="profile" class="dashboard-pane">
+        <section class="profile-section">
+          <h2 data-i18n="profileTitle">My Medical Profile</h2>
+          <div class="profile-card">
+
+            <div class="main-profile">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect fill='%234A90E2' width='150' height='150'/%3E%3Cpath fill='%23ffffff' d='M75 45c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20zm0 55c-16.5 0-30 6.7-30 15v10h60v-10c0-8.3-13.5-15-30-15z'/%3E%3C/svg%3E" alt="Profile Picture">
+            
+            </div>
+            <ul>
+              
+            </ul>
+              <button class="btn-edit" data-i18n="editProfile">Edit Profile</button>
+
+          </div>
+        </section>
+      </div>
+
+
+
+        </section>
+      </div>
+      <div id="doc-search" class="dashboard-pane is-active">
+        <section class="infoPatient">
+          <h1 data-i18n="dashboardTitle">AI Health Overview</h1>
+          <p class="subtitle-center" data-i18n="dashboardSubtitle">Monitor patients, detect risks, and make informed decisions with AI insights.</p>
+
+          
+
+          <div id="docTopline" class="report-grid" style="margin:10px 0 16px 0;"></div>
+
+          <div class="search-row">
+            <input
+              id="patientSearchId"
+              type="search"
+              class="search-bar"
+              data-i18n-placeholder="searchPlaceholder"
+            />
+            <button id="searchBtn" class="search-btn" data-i18n="searchBtn">Search</button>
+
+            
+          </div>
+
+          <div id="patientInfo" class="patient-info"></div>
+          <div id="patientResults"></div>
+
+        </section>
+      </div>
+
+      <div id="doc-upcoming" class="dashboard-pane">
+        <section class="patient-card">
+          <h3 style="margin-top:0;" data-i18n="upcomingAppointments">Upcoming Appointments</h3>
+          <div class="appointment-container">
+            <ul id="doctorUpcomingList" class="appointment-list"></ul>
+          </div>
+        </section>
+      </div>
+
+      <div id="doc-reports" class="dashboard-pane">
+        <section class="patient-card">
+          <div id="doctorReportsSummary" class="report-grid" style="margin-bottom:12px;"></div>
+          <div class="ai-buttons" style="text-align:center; margin-bottom:12px;">
+            <button class="btn-primary" type="button">View Reports</button>
+          </div>
+          <div class="ai-report">
+  <h3>AI Health Report</h3>
+  <div id="aiReportContainer" class="ai-report-container">
+    <p>Loading personalized health insights...</p>
+  </div>
+</div>  
+        </section>
+      </div>
+
+      <div id="doc-alerts" class="dashboard-pane">
+        <section class="patient-card">
+          <h3 style="margin-top:0;">Urgent Alerts</h3>
+          <div id="doctorAlertsList" class="alerts-scroll"></div>
+        </section>
+      </div>
+
+      <div id="doc-recs" class="dashboard-pane">
+        <section class="recommendation-section">
+          <div id="doctorRecsSummary" class="report-grid" style="margin-bottom:12px;"></div>
+          <h3 data-i18n="recommendations">AI Recommendations</h3>
+          
+        </section>
+      </div>
+
+      <div id="doc-actions" class="dashboard-pane">
+        <section class="doctor-actions">
+          <h3 data-i18n="doctorActions">Doctor Actions</h3>
+        </section>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-link2" data-i18n="backToMain">Back to Main Page</a>
+  </main>
+
+  <script src="lang.js"></script>
+  <script src="script.js"></script>
+  <script src="dashboard.js"></script>
+  <script src="ml-integration.js"></script>
+  <script>
+    // Guard: require logged-in doctor
+    (function(){
+      try {
+        const raw = localStorage.getItem('loggedInDoctor');
+        if (!raw) {
+          window.location.href = 'doctor-login.html';
+        }
+      } catch (_) {
+        window.location.href = 'doctor-login.html';
+      }
+    })();
+  </script>
+</body>
+</html>

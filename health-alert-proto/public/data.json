@@ -1,0 +1,717 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "Ahmet Yılmaz",
+      "age": 45,
+      "phone": "+905623756412",
+      "birthYear": 1980,
+      "gender": "Male",
+      "email": "ahmet.yilmaz@gmail.com",
+      "password": "ahmet123",
+      "doctorId": 1,
+      "allergies": [
+        "penicillin"
+      ],
+      "drugAllergies": ["penicillin"],
+      "chronic": [
+        "hypertension"
+      ],
+      "pastSurgeries": [
+        "appendectomy"
+      ],
+      "activeMedications": [
+        "ibuprofen"
+      ],
+      "heightCm": 178,
+      "weightKg": 86,
+      "appointments": [
+        {
+          "date": "2025-10-20",
+          "time": "09:30",
+          "doctor": "Dr. Ayhan Karaca",
+          "department": "Internal Medicine",
+          "location": "Room 203, HealthAlert Clinic"
+        },
+        
+        {
+          "date": "2025-11-15",
+          "time": "11:00",
+          "doctor": "Dr. Ayhan Karaca",
+          "department": "Follow-up",
+          "location": "Room 105"
+        },
+        {
+          "date": "2025-12-01",
+          "time": "10:45",
+          "doctor": "Dr. Ayhan Karaca",
+          "department": "Lab Review",
+          "location": "Lab A Counter"
+        },
+        {
+          "date": "2025-12-20",
+          "time": "16:00",
+          "doctor": "Dr. Ayhan Karaca",
+          "department": "Nutrition",
+          "location": "Dietician Office"
+        }
+      ],
+      "alerts": [
+        { "severity": "high", "text": "Hypertension: BP trend elevated; consider medication review and home BP log." },
+        { "severity": "medium", "text": "NSAID use (ibuprofen) may raise BP; consider alternatives." }
+      ],
+      "bloodAnalysis": {
+        "Glucose": 88.87,
+        "Cholesterol": 188.11,
+        "Hemoglobin": 15.35,
+        "Platelets": 252466.46,
+        "White Blood Cells": 6759.21,
+        "Red Blood Cells": 4.83,
+        "Hematocrit": 43.01,
+        "Mean Corpuscular Volume": 93.3,
+        "Mean Corpuscular Hemoglobin": 30.3,
+        "Mean Corpuscular Hemoglobin Concentration": 34.71,
+        "Insulin": 9.52,
+        "BMI": 23.03,
+        "Systolic Blood Pressure": 118.82,
+        "Diastolic Blood Pressure": 72.84,
+        "Triglycerides": 96.82,
+        "HbA1c": 5.04,
+        "LDL Cholesterol": 88.24,
+        "HDL Cholesterol": 55.14,
+        "ALT": 24.83,
+        "AST": 24.48,
+        "Heart Rate": 75.84,
+        "Creatinine": 0.96,
+        "Troponin": 0.01,
+        "C-reactive Protein": 1.48
+      }
+    },
+    {
+      "id": 2,
+      "name": "Fatma Demir",
+      "age": 62,
+      "phone": "+907493659987",
+      "birthYear": 1958,
+      "gender": "Female",
+      "email": "fatma.demir@yahoo.com",
+      "password": "fatma123",
+      "doctorId": 1,
+      "allergies": [],
+      "drugAllergies": [],
+      "chronic": [
+        "diabetes"
+      ],
+      "pastSurgeries": [],
+      "activeMedications": [
+        "metformin"
+      ],
+      "heightCm": 162,
+      "weightKg": 72,
+      "appointments": [
+        {
+          "date": "2025-10-28",
+          "time": "08:45",
+          "doctor": "Dr. Ayhan Karaca",
+          "department": "Endocrinology",
+          "location": "Room 312"
+        },
+        {
+          "date": "2025-11-10",
+          "time": "13:30",
+          "doctor": "Dr. Ayhan Karaca",
+          "department": "Diabetes Clinic",
+          "location": "Clinic B"
+        },
+        {
+          "date": "2025-11-25",
+          "time": "10:00",
+          "doctor": "Dr. Ayhan Karaca",
+          "department": "Follow-up",
+          "location": "Room 207"
+        }
+      ],
+      "bloodAnalysis": {
+        "Glucose": 181.87,
+        "Cholesterol": 185.13,
+        "Hemoglobin": 13.09,
+        "Platelets": 250355.86,
+        "White Blood Cells": 7064.69,
+        "Red Blood Cells": 4.3,
+        "Hematocrit": 40.43,
+        "Mean Corpuscular Volume": 87.03,
+        "Mean Corpuscular Hemoglobin": 28.7,
+        "Mean Corpuscular Hemoglobin Concentration": 35.53,
+        "Insulin": 10.47,
+        "BMI": 30.88,
+        "Systolic Blood Pressure": 112.75,
+        "Diastolic Blood Pressure": 71.98,
+        "Triglycerides": 296.96,
+        "HbA1c": 7.78,
+        "LDL Cholesterol": 86.6,
+        "HDL Cholesterol": 54.97,
+        "ALT": 23.84,
+        "AST": 26.02,
+        "Heart Rate": 73.19,
+        "Creatinine": 1.02,
+        "Troponin": 0.01,
+        "C-reactive Protein": 1.5
+      }
+    },
+    {
+      "id": 3,
+      "name": "Mehmet Kaya",
+      "age": 30,
+      "phone": "+905623756413",
+      "birthYear": 1995,
+      "gender": "Male",
+      "email": "kaya.mehmet@gmail.com",
+      "password": "mehmet123",
+      "doctorId": 1,
+      "allergies": [
+        "aspirin"
+      ],
+      "drugAllergies": ["aspirin"],
+      "chronic": [],
+      "pastSurgeries": [
+        "tonsillectomy"
+      ],
+      "activeMedications": [],
+      "heightCm": 180,
+      "weightKg": 78,
+      "appointments": [
+        {
+          "date": "2025-10-30",
+          "time": "09:00",
+          "doctor": "Dr. Ayhan Karaca",
+          "department": "General Medicine",
+          "location": "Room 110"
+        },
+        {
+          "date": "2025-11-12",
+          "time": "11:30",
+          "doctor": "Dr. Ayhan Karaca",
+          "department": "Follow-up",
+          "location": "Room 204"
+        }
+      ],
+      "bloodAnalysis": {
+        "Glucose": 93.96,
+        "Cholesterol": 187.11,
+        "Hemoglobin": 9.54,
+        "Platelets": 260546.86,
+        "White Blood Cells": 6711.94,
+        "Red Blood Cells": 3.04,
+        "Hematocrit": 29.43,
+        "Mean Corpuscular Volume": 76.16,
+        "Mean Corpuscular Hemoglobin": 29.67,
+        "Mean Corpuscular Hemoglobin Concentration": 33.22,
+        "Insulin": 10.33,
+        "BMI": 21.68,
+        "Systolic Blood Pressure": 112.48,
+        "Diastolic Blood Pressure": 75.32,
+        "Triglycerides": 96.41,
+        "HbA1c": 5.36,
+        "LDL Cholesterol": 86.17,
+        "HDL Cholesterol": 57.68,
+        "ALT": 25.68,
+        "AST": 24.25,
+        "Heart Rate": 71.29,
+        "Creatinine": 1.03,
+        "Troponin": 0.01,
+        "C-reactive Protein": 1.53
+      }
+    },
+    {
+      "id": 4,
+      "name": "Elif Arslan",
+      "age": 25,
+      "phone": "+905623756414",
+      "birthYear": 2000,
+      "gender": "Female",
+      "email": "elif.arslan@gmail.com",
+      "password": "elif123",
+      "doctorId": 1,
+      "allergies": [
+        "latex"
+      ],
+      "drugAllergies": [],
+      "chronic": [
+        "asthma"
+      ],
+      "pastSurgeries": [],
+      "activeMedications": [
+        "salbutamol"
+      ],
+      "heightCm": 168,
+      "weightKg": 60,
+      "appointments": [
+        { "date": "2025-11-06", "time": "09:40", "doctor": "Dr. Ayhan Karaca", "department": "Pulmonology", "location": "Room 305" },
+        { "date": "2025-11-27", "time": "10:20", "doctor": "Dr. Ayhan Karaca", "department": "Asthma Clinic", "location": "Clinic A" }
+      ],
+      "alerts": [
+        { "severity": "medium", "text": "Asthma: Ensure inhaler technique is correct; review salbutamol use." },
+        { "severity": "low", "text": "Latex allergy: Avoid latex-containing medical supplies." }
+      ],
+      "bloodAnalysis": {
+        "Glucose": 93.27,
+        "Cholesterol": 182.22,
+        "Hemoglobin": 8.82,
+        "Platelets": 239088.96,
+        "White Blood Cells": 6867.69,
+        "Red Blood Cells": 5.76,
+        "Hematocrit": 29.6,
+        "Mean Corpuscular Volume": 69.08,
+        "Mean Corpuscular Hemoglobin": 21.0,
+        "Mean Corpuscular Hemoglobin Concentration": 33.91,
+        "Insulin": 9.62,
+        "BMI": 22.47,
+        "Systolic Blood Pressure": 118.0,
+        "Diastolic Blood Pressure": 75.46,
+        "Triglycerides": 102.71,
+        "HbA1c": 5.2,
+        "LDL Cholesterol": 90.2,
+        "HDL Cholesterol": 54.6,
+        "ALT": 23.81,
+        "AST": 24.02,
+        "Heart Rate": 71.49,
+        "Creatinine": 1.01,
+        "Troponin": 0.01,
+        "C-reactive Protein": 1.5
+      }
+    },
+    {
+      "id": 5,
+      "name": "Murat Özkan",
+      "age": 50,
+      "phone": "+905623756415",
+      "birthYear": 1975,
+      "gender": "Male",
+      "email": "murat.ozkan@gmail.com",
+      "password": "murat123",
+      "doctorId": 1,
+      "allergies": [],
+      "drugAllergies": [],
+      "chronic": [
+        "high cholesterol"
+      ],
+      "pastSurgeries": [
+        "hernia repair"
+      ],
+      "activeMedications": [
+        "atorvastatin"
+      ],
+      "heightCm": 175,
+      "weightKg": 92,
+      "appointments": [
+        { "date": "2025-11-04", "time": "15:10", "doctor": "Dr. Ayhan Karaca", "department": "Lipid Clinic", "location": "Room 118" },
+        { "date": "2025-12-09", "time": "09:00", "doctor": "Dr. Ayhan Karaca", "department": "Follow-up", "location": "Room 104" }
+      ],
+      "alerts": [
+        { "severity": "medium", "text": "Hyperlipidemia: Continue statin therapy; monitor liver enzymes periodically." }
+      ],
+      "bloodAnalysis": {
+        "Glucose": 86.19,
+        "Cholesterol": 176.22,
+        "Hemoglobin": 14.49,
+        "Platelets": 66880.76,
+        "White Blood Cells": 7828.73,
+        "Red Blood Cells": 5.07,
+        "Hematocrit": 46.67,
+        "Mean Corpuscular Volume": 92.73,
+        "Mean Corpuscular Hemoglobin": 29.06,
+        "Mean Corpuscular Hemoglobin Concentration": 35.33,
+        "Insulin": 10.04,
+        "BMI": 22.68,
+        "Systolic Blood Pressure": 119.56,
+        "Diastolic Blood Pressure": 73.64,
+        "Triglycerides": 96.1,
+        "HbA1c": 5.06,
+        "LDL Cholesterol": 89.34,
+        "HDL Cholesterol": 56.75,
+        "ALT": 25.9,
+        "AST": 23.77,
+        "Heart Rate": 75.08,
+        "Creatinine": 0.99,
+        "Troponin": 0.01,
+        "C-reactive Protein": 1.44
+      }
+    },
+    {
+      "id": 6,
+      "name": "Zeynep Acar",
+      "age": 40,
+      "phone": "+905623756416",
+      "birthYear": 1985,
+      "gender": "Female",
+      "email": "zeynep.acar@gmail.com",
+      "password": "zeynep123",
+      "doctorId": 2,
+      "allergies": [
+        "shellfish"
+      ],
+      "drugAllergies": [],
+      "chronic": [
+        "thyroid disorder"
+      ],
+      "pastSurgeries": [
+        "gallbladder removal"
+      ],
+      "activeMedications": [
+        "levothyroxine"
+      ],
+      "heightCm": 164,
+      "weightKg": 65,
+      "appointments": [
+        { "date": "2025-11-05", "time": "09:15", "doctor": "Dr. Derya Ersoy", "department": "Endocrinology", "location": "Room 210" },
+        { "date": "2025-11-22", "time": "11:00", "doctor": "Dr. Derya Ersoy", "department": "Follow-up", "location": "Room 207" },
+        { "date": "2025-12-14", "time": "10:30", "doctor": "Dr. Derya Ersoy", "department": "Lab Review", "location": "Lab B Counter" }
+      ],
+      "alerts": [
+        { "severity": "medium", "text": "Thyroid disorder: Ensure levothyroxine taken on empty stomach; separate from calcium/iron." }
+      ],
+      "bloodAnalysis": {
+        "Glucose": 88.41,
+        "Cholesterol": 180.34,
+        "Hemoglobin": 13.77,
+        "Platelets": 246590.74,
+        "White Blood Cells": 7330.25,
+        "Red Blood Cells": 4.71,
+        "Hematocrit": 39.01,
+        "Mean Corpuscular Volume": 89.98,
+        "Mean Corpuscular Hemoglobin": 29.4,
+        "Mean Corpuscular Hemoglobin Concentration": 33.27,
+        "Insulin": 9.54,
+        "BMI": 22.24,
+        "Systolic Blood Pressure": 115.03,
+        "Diastolic Blood Pressure": 71.64,
+        "Triglycerides": 97.79,
+        "HbA1c": 5.41,
+        "LDL Cholesterol": 87.66,
+        "HDL Cholesterol": 53.05,
+        "ALT": 24.97,
+        "AST": 26.21,
+        "Heart Rate": 73.07,
+        "Creatinine": 1.02,
+        "Troponin": 0.01,
+        "C-reactive Protein": 1.46
+      }
+    },
+    {
+      "id": 7,
+      "name": "Can Yücel",
+      "age": 35,
+      "phone": "+905623756417",
+      "birthYear": 1990,
+      "gender": "Male",
+      "email": "can.yucel@yahoo.com",
+      "password": "can123",
+      "doctorId": 2,
+      "allergies": [],
+      "drugAllergies": [],
+      "chronic": [],
+      "pastSurgeries": [],
+      "activeMedications": [],
+      "heightCm": 182,
+      "weightKg": 84,
+      "appointments": [
+        { "date": "2025-11-03", "time": "14:00", "doctor": "Dr. Derya Ersoy", "department": "General Medicine", "location": "Room 105" },
+        { "date": "2025-11-28", "time": "16:30", "doctor": "Dr. Derya Ersoy", "department": "Nutrition", "location": "Dietician Office" }
+      ],
+      "alerts": [
+        { "severity": "low", "text": "Lifestyle: Maintain regular exercise and balanced diet." }
+      ],
+      "bloodAnalysis": {
+        "Glucose": 287.73,
+        "Cholesterol": 253.31,
+        "Hemoglobin": 15.2,
+        "Platelets": 253338.24,
+        "White Blood Cells": 7025.04,
+        "Red Blood Cells": 4.8,
+        "Hematocrit": 46.51,
+        "Mean Corpuscular Volume": 88.39,
+        "Mean Corpuscular Hemoglobin": 29.06,
+        "Mean Corpuscular Hemoglobin Concentration": 32.44,
+        "Insulin": 10.09,
+        "BMI": 36.9,
+        "Systolic Blood Pressure": 109.44,
+        "Diastolic Blood Pressure": 75.09,
+        "Triglycerides": 399.0,
+        "HbA1c": 9.77,
+        "LDL Cholesterol": 87.07,
+        "HDL Cholesterol": 56.05,
+        "ALT": 24.72,
+        "AST": 26.09,
+        "Heart Rate": 72.28,
+        "Creatinine": 0.98,
+        "Troponin": 0.01,
+        "C-reactive Protein": 1.56
+      }
+    },
+    {
+      "id": 8,
+      "name": "Ayşe Çelik",
+      "age": 28,
+      "phone": "+905623756418",
+      "birthYear": 1997,
+      "gender": "Female",
+      "email": "ayse.celik09@yahoo.com",
+      "password": "ayse123",
+      "doctorId": 2,
+      "allergies": [
+        "gluten"
+      ],
+      "drugAllergies": [],
+      "chronic": [
+        "celiac disease"
+      ],
+      "pastSurgeries": [],
+      "activeMedications": [
+        "vitamin supplements"
+      ],
+      "heightCm": 170,
+      "weightKg": 58,
+      "appointments": [
+        { "date": "2025-11-09", "time": "10:45", "doctor": "Dr. Derya Ersoy", "department": "Gastroenterology", "location": "Clinic C" },
+        { "date": "2025-12-03", "time": "09:50", "doctor": "Dr. Derya Ersoy", "department": "Dietary Consult", "location": "Room 304" }
+      ],
+      "alerts": [
+        { "severity": "medium", "text": "Celiac disease: Strict gluten-free diet; check for nutritional deficiencies." }
+      ],
+      "bloodAnalysis": {
+        "Glucose": 90.27,
+        "Cholesterol": 175.35,
+        "Hemoglobin": 7.3,
+        "Platelets": 259930.39,
+        "White Blood Cells": 7280.29,
+        "Red Blood Cells": 2.61,
+        "Hematocrit": 26.27,
+        "Mean Corpuscular Volume": 72.37,
+        "Mean Corpuscular Hemoglobin": 30.68,
+        "Mean Corpuscular Hemoglobin Concentration": 35.35,
+        "Insulin": 10.39,
+        "BMI": 22.62,
+        "Systolic Blood Pressure": 116.63,
+        "Diastolic Blood Pressure": 71.88,
+        "Triglycerides": 96.62,
+        "HbA1c": 5.41,
+        "LDL Cholesterol": 90.96,
+        "HDL Cholesterol": 52.3,
+        "ALT": 24.0,
+        "AST": 25.41,
+        "Heart Rate": 71.29,
+        "Creatinine": 0.97,
+        "Troponin": 0.01,
+        "C-reactive Protein": 1.53
+      }
+    },
+    {
+      "id": 9,
+      "name": "Hakan Şahin",
+      "age": 55,
+      "phone": "+905623756419",
+      "birthYear": 1965,
+      "gender": "Male",
+      "email": "hakan.sahin@gmail.com",
+      "password": "hakan123",
+      "doctorId": 2,
+      "allergies": [],
+      "drugAllergies": [],
+      "chronic": [
+        "heart disease"
+      ],
+      "pastSurgeries": [
+        "bypass surgery"
+      ],
+      "activeMedications": [
+        "aspirin",
+        "ibuprofen",
+        "beta-blockers"
+      ],
+      "heightCm": 173,
+      "weightKg": 88,
+      "appointments": [
+        { "date": "2025-11-07", "time": "08:30", "doctor": "Dr. Derya Ersoy", "department": "Cardiology", "location": "Cardio Wing, Floor 2" }
+      ],
+      "alerts": [
+        { "severity": "high", "text": "Heart disease: Avoid ibuprofen with aspirin due to increased bleeding risk." },
+        { "severity": "medium", "text": "Post-bypass: Adhere to cardiac rehab and medication regimen." }
+      ],
+      "bloodAnalysis": {
+        "Glucose": 88.43,
+        "Cholesterol": 184.44,
+        "Hemoglobin": 7.83,
+        "Platelets": 258730.59,
+        "White Blood Cells": 7110.33,
+        "Red Blood Cells": 5.87,
+        "Hematocrit": 25.08,
+        "Mean Corpuscular Volume": 64.4,
+        "Mean Corpuscular Hemoglobin": 21.82,
+        "Mean Corpuscular Hemoglobin Concentration": 33.13,
+        "Insulin": 10.47,
+        "BMI": 21.76,
+        "Systolic Blood Pressure": 119.51,
+        "Diastolic Blood Pressure": 75.98,
+        "Triglycerides": 102.95,
+        "HbA1c": 5.2,
+        "LDL Cholesterol": 90.69,
+        "HDL Cholesterol": 54.96,
+        "ALT": 24.24,
+        "AST": 25.56,
+        "Heart Rate": 73.36,
+        "Creatinine": 0.95,
+        "Troponin": 0.01,
+        "C-reactive Protein": 1.45
+      }
+    },
+    {
+      "id": 10,
+      "name": "Selin Korkmaz",
+      "age": 22,
+      "phone": "+905623756420",
+      "birthYear": 2003,
+      "gender": "Female",
+      "email": "selin.korkmaz@yahoo.com",
+      "password": "selin123",
+      "doctorId": 2,
+      "allergies": [],
+      
+      "drugAllergies": [],
+      "chronic": [],
+      "pastSurgeries": [],
+      "activeMedications": [],
+      "heightCm": 165,
+      "weightKg": 54,
+      "appointments": [
+        {
+          "date": "2025-11-01",
+          "time": "13:00",
+          "doctor": "Dr. Derya Ersoy",
+          "department": "Allergy Clinic",
+          "location": "Clinic E"
+        },
+        {
+          "date": "2025-12-08",
+          "time": "15:30",
+          "doctor": "Dr. Derya Ersoy",
+          "department": "Routine Check",
+          "location": "Room 101"
+        }
+      ],
+      "bloodAnalysis": {
+        "Glucose": 93.85,
+        "Cholesterol": 178.71,
+        "Hemoglobin": 14.13,
+        "Platelets": 28807.76,
+        "White Blood Cells": 5618.72,
+        "Red Blood Cells": 4.41,
+        "Hematocrit": 39.54,
+        "Mean Corpuscular Volume": 93.16,
+        "Mean Corpuscular Hemoglobin": 29.45,
+        "Mean Corpuscular Hemoglobin Concentration": 32.88,
+        "Insulin": 10.06,
+        "BMI": 22.96,
+        "Systolic Blood Pressure": 117.25,
+        "Diastolic Blood Pressure": 75.53,
+        "Triglycerides": 95.97,
+        "HbA1c": 5.26,
+        "LDL Cholesterol": 94.41,
+        "HDL Cholesterol": 53.02,
+        "ALT": 25.05,
+        "AST": 25.94,
+        "Heart Rate": 76.81,
+        "Creatinine": 1.02,
+        "Troponin": 0.01,
+        "C-reactive Protein": 5.43
+      }
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Ayhan Karaca",
+      "specialization": "Internal Medicine",
+      "institutionId": "HOSP7519",
+      "email": "ayhan.karaca@gmail.com",
+      "password": "doctor1",
+      "patientsUnderCare": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dr. Derya Ersoy",
+      "specialization": "Cardiology",
+      "institutionId": "HOSP9876",
+      "email": "derya.ersoy@gmail.com",
+      "password": "doctor2",
+      "patientsUnderCare": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ],
+  "drugInteractions": [
+    {
+      "a": "warfarin",
+      "b": "ibuprofen",
+      "risk": "high",
+      "reason": "increased bleeding risk"
+    },
+    {
+      "a": "aspirin",
+      "b": "ibuprofen",
+      "risk": "medium",
+      "reason": "increased GI bleeding risk"
+    },
+    {
+      "a": "metformin",
+      "b": "contrast",
+      "risk": "medium",
+      "reason": "lactic acidosis risk with contrast in renal impairment"
+    },
+    {
+      "a": "beta-blockers",
+      "b": "salbutamol",
+      "risk": "medium",
+      "reason": "functional antagonism may reduce bronchodilator response"
+    },
+    {
+      "a": "levothyroxine",
+      "b": "calcium",
+      "risk": "low",
+      "reason": "decreased thyroid hormone absorption; separate dosing by 4 hours"
+    },
+    {
+      "a": "metformin",
+      "b": "cimetidine",
+      "risk": "medium",
+      "reason": "reduced renal clearance of metformin may increase lactic acidosis risk"
+    },
+    {
+      "a": "aspirin",
+      "b": "beta-blockers",
+      "risk": "low",
+      "reason": "possible attenuation of antihypertensive effect in some patients"
+    },
+    {
+      "a": "atorvastatin",
+      "b": "clarithromycin",
+      "risk": "high",
+      "reason": "CYP3A4 inhibition increases statin levels and myopathy risk"
+    }
+  ],
+  "unnecessaryTests": [
+    {
+      "test": "chest_xray",
+      "repeatWithinDays": 30
+    }
+  ]
+}

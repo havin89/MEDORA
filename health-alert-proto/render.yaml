@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: medora-frontend
+    env: node
+    region: frankfurt  # or your preferred region
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: ML_API_URL
+        sync: false  # You'll set this manually after deploying the ML service
